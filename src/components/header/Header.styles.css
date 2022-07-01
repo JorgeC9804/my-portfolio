@@ -1,0 +1,97 @@
+.menu {
+    position: fixed;
+    height: 100vh;
+    width: 100%;
+    background: linear-gradient(rgb(168, 103, 103), #ff00c8);
+    animation-name: open;
+    animation-duration: 0.6s;
+    border-radius: 20px;
+    z-index: 1;
+}
+.close-menu {
+    position: fixed;
+    animation-name: close;
+    animation-duration: 0.6s;
+    z-index: 1;
+}
+.show-menu-icon {
+    position: fixed;
+    left: 0;
+    height: 90px;
+    width: 90px;
+    background-color: rgba(255, 255, 255, 0);    
+    border: none;  
+    transition: 0.3s;
+    font-size: 19px;
+    color: #c20098;
+    cursor: pointer;
+    z-index: 1;
+}
+.close-menu-icon {
+    position: absolute;
+    left: 0;
+    height: 90px;
+    width: 90px;
+    background-color: rgba(245, 245, 245, 0);
+    color: rgb(26, 25, 25);
+    border: none;
+    border-radius: 10%;  
+    transition: 0.3s; /*transicion en hover*/
+    font-size: 30px;
+    color: rgb(174, 0, 255);
+    cursor: pointer;
+    z-index: 1;
+}
+
+/*------------------------------- General ------------------------------*/
+
+.none {
+    display: none;
+}
+
+/*------------------------------- Hover ------------------------------*/
+
+.show-menu-icon:hover {
+    font-size: 30px;
+}   
+.close-menu-icon:hover {
+    font-size: 18px;
+}
+
+/*------------------------------- @media ------------------------------*/
+
+@media (min-width: 800px) {
+    .show-menu-icon {
+        display: none;
+    }
+}
+@media (max-width: 800px) {
+    .sec-info {
+        display: none;
+    }
+}
+
+/*------------------------------- @keyframes ------------------------------*/
+
+@keyframes open {
+    from {
+        background-color: rgb(195, 0, 255);
+        height: 100%;
+        width: 7%;
+    }
+    
+}
+
+@keyframes close {
+    from {
+        background: rgb(103, 179, 250);
+        height: 100vh;
+        width: 100%;
+    }
+    to {
+        background-color: transparent; 
+        height: 100%;
+        width: 0;
+        color: black;
+    }
+}

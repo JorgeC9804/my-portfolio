@@ -1,0 +1,276 @@
+
+/*-------------------------------------- about me -----------------------------------------*/
+
+.me-principal {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.795);
+    /*background: linear-gradient(rgb(122, 49, 26), rgb(155, 84, 177));/**/
+    z-index: 5;
+}
+.me-principal::-webkit-scrollbar {
+    height: 0px;
+    width: 0px;
+}   
+.container {
+    position: fixed;
+    top: 10vh;
+    display: flex;
+    flex-direction: row;
+    width: 800px;
+    height: 80vh;
+    z-index: 5;
+}
+/*ambos cuadros*/
+.about-me {
+    position: absolute;
+    width: 400px;
+    height: 80vh;
+    z-index: 1;
+}
+
+/*---------------------------------------- sixe --------------------------------------*/
+
+.col-1 { /*primer salida*/
+    position: absolute;
+    left: 0;
+    background: linear-gradient(rgb(187, 115, 93), rgba(0, 0, 0, 0.89));/**/
+    animation-name: col-1-1;
+    animation-duration: 0.5s;
+    border-radius: 16px 0px 0px;
+    padding: 15px 30px;  
+    box-sizing: border-box;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 20.5px;
+    z-index: 4;
+    
+}
+.col-2 {
+    position: absolute;
+    right: 0;
+    /*background-color: rgb(24, 236, 236);/**/
+    background: linear-gradient(rgb(29, 138, 138), rgba(0, 0, 0, 0.89));/**/
+    animation-name: col-2-1;
+    animation-duration: 0.5s;
+    border-radius: 0px 16px 0px 0px;
+}
+.none {
+    display: none;
+}
+
+/*---------------------------------------- button --------------------------------------*/
+
+.btn-close {
+    right: 0;
+    width: 50px;
+    height: 50px;
+    background-color: transparent;
+    border: none;
+    font-size: 35px;
+    cursor: pointer;
+    color: rgb(255, 0, 119);
+    z-index: 6;
+}
+.close {
+    position: absolute;
+    right: 200%;
+    animation-name: btn-close;
+    animation-duration: 0.5s;
+}
+.open {
+    position: absolute;
+    top: 0;
+    animation-name: btn-close;
+    animation-duration: 0.5s;
+}
+.close-col-1 {
+    position: absolute;
+    bottom: 200%;
+    left: 0;
+    background: linear-gradient(rgb(187, 115, 93), rgba(18, 33, 75, 0.486));/**/
+    animation-name: close-col-1;
+    animation-duration: 0.7s;
+    z-index: 4;
+}
+
+.close-col-2 {
+    position: absolute;
+    top: 0;
+    right: 200%;
+    background: linear-gradient(rgb(29, 138, 138), rgba(18, 33, 75, 0.486));/**/
+    animation-name: close-col-2;
+    animation-duration: 0.7s;
+    z-index: 4;
+}
+
+
+/*---------------------------------------- media --------------------------------------*/
+@media(max-width: 900px) {
+    .container {
+        position: fixed;
+        top: 2.5vh;
+        display: flex;
+        flex-direction: column;
+        width: 95%;
+        height: 95vh;
+        z-index: 5;
+    }
+    .about-me {
+        position: relative;
+        width: 100%;
+        height: 50%;
+        z-index: 1;
+    }
+    .col-1 { /*primer salida*/
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: linear-gradient(rgb(187, 115, 93), rgba(18, 33, 75, 0.486));/**/
+        animation-name: col-1-2;
+        animation-duration: 0.5s;
+        border-radius: 16px;
+        z-index: 4;
+    }
+    .col-2 {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        background: linear-gradient(rgb(29, 138, 138), rgba(18, 33, 75, 0.486));/**/
+        animation-name: col-2-2;
+        animation-duration: 0.8s;
+        border-radius: 16px;
+    }
+    .open {
+        position: absolute;
+        top: 0;
+        animation-name: btn-close;
+        animation-duration: 0.1s;
+    }
+    .close {
+        position: absolute;
+        right: 200%;
+        animation-name: btn-close;
+        animation-duration: 0.5s;
+    }
+    .close-col-1 {
+        position: absolute;
+        top: 0;
+        left: -200%;
+        background: linear-gradient(rgb(187, 115, 93), rgba(18, 33, 75, 0.486));/**/
+        animation-name: close-col-1-1;
+        animation-duration: 0.7s;
+        z-index: 4;
+    }
+    
+    .close-col-2 {
+        position: absolute;
+        top: 50%;
+        right: -200%;
+        background: linear-gradient(rgb(29, 138, 138), rgba(18, 33, 75, 0.486));/**/
+        animation-name: close-col-2-1;
+        animation-duration: 0.7s;
+        z-index: 4;
+    }
+
+    @keyframes close-col-1-1 {
+        from {
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+    }
+    @keyframes close-col-2-1 {
+        from {
+            position: absolute;
+            top: 50%;
+            right: 0;
+        }
+
+    }
+
+    @keyframes col-1-2 {
+        from {
+            position: absolute;
+            left: 100vh;
+        }
+        to {
+            position: absolute;
+            top: 0;
+        }
+    }
+    @keyframes col-2-2 {
+        from {
+            position: absolute;
+            right: 100vh;
+        }
+        to {
+            position: absolute;
+            bottom: 0;
+        }
+    }
+    @keyframes btn-close-1 {
+        from {
+            color: transparent;
+        }
+        to {
+            color: rgb(255, 0, 119);
+        }
+    }
+}
+
+/*-------------------------------------- @keyframes -----------------------------------------*/
+
+/*-------------------------- close ---------------------------*/
+
+@keyframes close-col-1 {
+    from {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        background: linear-gradient(rgb(187, 115, 93), rgba(18, 33, 75, 0.486));/**/
+    }
+}
+@keyframes close-col-2 {
+    from {
+        position: absolute;
+        top: 0;
+        right: 0;
+        background: linear-gradient(rgb(29, 138, 138), rgba(18, 33, 75, 0.486));/**/
+    }
+}
+
+/*-------------------------- open ---------------------------*/
+
+@keyframes col-1-1 {
+    from {
+        position: absolute;
+        top: 100vh;
+    }
+    to {
+        position: absolute;
+        top: 0;
+    }
+}
+@keyframes col-2-1 {
+    from {
+        position: absolute;
+        right: -1000px;
+    }
+    to {
+        position: absolute;
+        right: 0;
+    }
+}
+@keyframes btn-close {
+    from {
+        position: absolute;
+        right: -1000px;
+    }
+    to {
+        position: absolute;
+        right: 0;
+    }
+}

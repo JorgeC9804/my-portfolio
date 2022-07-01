@@ -1,0 +1,120 @@
+.intro {
+    background: black;
+    height: 100vh;
+}
+.presentacion {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: rgb(0, 180, 180);
+}
+.sym-1 {
+    animation-name: sym1;
+    animation-duration: 0.3s;
+    display: flex;
+    font-size: 88px;
+}
+.sym-2 {
+    animation-name: welcome;
+    animation-duration: 9s;
+    display: flex;
+    align-items: center;
+    font-size: 60px;
+    width: 235px;
+}
+.sym-3 {
+    animation-name: sym2;
+    animation-duration: 0.3s;
+    position: relative;
+    right: -6px;
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    font-size: 60px;
+}
+.sym-4 {
+    animation-name: sym3;
+    animation-duration: 0.3s;
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    font-size: 88px;
+}
+
+/*---------------------------- change --------------------------------*/
+.sym-1-1 {
+    animation-name: sym-g;
+    animation-duration: 1.5s;
+    position: relative;
+    left: 112.5px;
+    font-size: 88px;
+    z-index: 1;
+}
+.sym-2-1 {
+    position: relative;
+    color: black;
+    font-size: 60px;
+    z-index: 0;
+}
+.sym-3-1 {
+    animation-name: sym-g;
+    animation-duration: 1.5s;
+    position: relative;
+    right: 120.5px;
+    font-size: 60px;
+    z-index: 1;
+}
+.sym-4-1 {
+    animation-name: sym-g;
+    animation-duration: 1.5s;
+    position: relative;
+    right: 120.5px;
+    font-size: 88px;
+    z-index: 1;
+}
+
+/*---------------------------- positions lines --------------------------------*/
+
+/*---------------------------- @keyframes --------------------------------*/
+/*----------------- true ---------------------*/
+@keyframes sym1 {
+    from {
+        position: relative;
+        left: 112.5px;
+    }
+    to {
+        position: relative;
+        left: 0px;
+    }
+}
+@keyframes sym2 {
+    from {
+        position: relative;
+        right: 120.5px;
+    }
+    to {
+        position: relative;
+    }
+}
+@keyframes sym3 {
+    from {
+        position: relative;
+        right: 120.5px;
+    }
+    to {
+        position: relative;
+        right: 0px;
+    }
+}
+@keyframes welcome {
+    from {
+        color: black;
+    }
+}
+/*----------------- false ---------------------*/
+@keyframes sym-g {
+    from {
+        color: transparent;
+    }
+}

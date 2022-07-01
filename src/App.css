@@ -1,0 +1,10 @@
+* {
+  outline: none;
+}
+.App {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  text-align: center;
+}/*sin modificar*/
+

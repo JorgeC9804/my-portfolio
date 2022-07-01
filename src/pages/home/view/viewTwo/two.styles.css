@@ -1,0 +1,592 @@
+/**/
+
+.change-presentation-2 {
+    position: relative;
+    top: 0px;
+    /* background: linear-gradient(rgba(255, 245, 234, 0), rgb(48, 46, 71));/**/
+    color: white;
+    background: black;
+    height: 100vh;
+    width: 100%;
+    animation-name: black;
+    animation-duration: 1s;
+}
+
+/*---------------------------------------- image me --------------------------------------*/
+
+.image-me {
+    position: absolute;
+    left: 10%;
+    top: 10%;
+    width: 400px;
+    height: 600px;
+    /*background-image: url('../../../pictures/spider.jpg');*/
+    background-size: cover;
+    border: 1px solid red;
+    animation-name: me-2;
+    animation-duration: 2s;
+}
+.image-me-1 {
+    position: absolute;
+    left: 10%;
+    top: 10%;
+    width: 400px;
+    height: 600px;
+    /*background-image: url('../../../pictures/spider.jpg');*/
+    background-size: cover;
+    opacity: 0;
+}
+
+/*---------------------------------------- presentation 2 --------------------------------------*/
+
+.presentation-2 {   
+    position: relative;
+    top: 0px;
+    height: 100vh;
+    width: 100%;
+    /*animation-name: presentation-2;
+    animation-duration: 0.5s;/**/
+    animation-name: white;
+    animation-duration: 2s;
+}
+.presentation-2-1 {
+    position: relative;
+    top: 0px;
+    height: 100vh;
+    width: 100%;
+}
+.pres-2 {
+    position: relative;
+    top: 0;
+    left: 44%;
+    height: 40vh;
+    width: 50%;
+    z-index: 0;
+    /*background-color: blueviolet;/**/
+    animation-name: info;
+    animation-duration: 1.5s;
+}
+.pres-2-1 {
+    position: relative;
+    top: 0;
+    left: 44%;
+    height: 40vh;
+    width: 50%;
+    z-index: 0;
+    opacity: 0;
+    /*background-color: blueviolet;/**/
+}
+.pres-2::-webkit-scrollbar {
+    height: 0px;
+    width: 0px;
+}
+.view-2-1 {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    /*background-color: blueviolet;/**/
+}
+.view-2-1 p {
+    position: relative;
+    width: 90%;
+    font-size: 18px;
+    /*background: yellowgreen;
+    /*font-style: italic;*/
+    font-family: 'Monaco';  
+}
+.btn {
+    position: relative;
+    top: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.418);
+    width: 130px;
+    height: 50px;
+    border-radius: 10px;
+    font-size: 20px;
+    background-color: transparent;
+}
+.b-me {
+    transition: all 0.3s ease;
+    border-radius: 4px;
+    font-size: 16px;
+}
+.black {
+    background-color: white;
+    color: black;
+    animation-name: white;
+    animation-duration: 2s;
+}
+.white {
+    background-color: black;
+    color: white;
+    border: 1px solid rgb(117, 117, 117);
+    animation-name: black;
+    animation-duration: 1s;
+}
+
+/*---------------------------------------- general --------------------------------------*/
+.none {
+    display: none;
+}
+
+/*---------------------------------------- line --------------------------------------*/
+
+.line {
+    position: absolute;
+    top: 10%;
+    left: 95%;
+    width: 4px;
+    height: 80vh;
+    border: none;
+}
+.red {
+    background: linear-gradient(red, #ff00c8);/**/
+}
+.green {
+    background: linear-gradient(rgb(136, 255, 0), #0077ff);
+}
+.yellow {
+    background: linear-gradient(rgb(255, 230, 0), #ff5e00);
+}
+.purple {
+    background: linear-gradient(rgb(162, 0, 255), #af6a88);
+}
+
+/*---------------------------------------- sound --------------------------------------*/
+.options {
+    font-size: 21px;
+    transition: 0.3s;
+    color: rgb(255, 81, 0);
+    background: transparent;
+    border: 0;
+    z-index: 2;
+}
+.active {
+    display: flex;
+    align-items: center;
+    height: 40px;
+    background: rgb(39, 39, 39);
+    z-index: 1;
+    border-radius: 12px;
+    animation-name: show;
+    animation-duration: 1s;
+}
+.absolute {
+    position: absolute;
+    right: 5%;
+    top: 4px;
+}
+.fixed {
+    position: fixed;
+    right: 5%;
+    top: 4px;
+}
+/*-------------------------------------*/
+.move-up-absolute {
+    position: absolute;
+    right: 5%;
+    top: 20px;
+}
+.move-up-fixed {
+    position: fixed;
+    right: 5%;
+    top: 25px;
+}
+/*-------------------------------------*/
+.move-down-absolute {
+    position: absolute;
+    right: 5%;
+    top: 90vh;
+}
+.move-down-fixed {
+    position: fixed;
+    right: 5%;
+    top: 90vh;
+}
+/*-------------------------------------*/
+.predeterminado  {
+    position: absolute;
+    right: 5%;
+    display: flex;
+    align-items: center;
+    height: 40px;
+    background: rgb(39, 39, 39);
+    z-index: 1;
+    border-radius: 12px;
+}
+
+.width-1 {
+    width: 103px;
+    animation-name: desactive;
+    animation-duration: 1s;
+}
+.width-2 {
+    width: 250px;
+    animation-name: active;
+    animation-duration: 1s;
+}
+.width-3 {
+    width: 103px;
+}
+.play {
+    position: absolute;
+    right: 40px;
+    color: red;
+}
+.muted {
+    position: absolute;
+    right: 8px;
+    color: #ff00c8;
+}
+.function {
+    font-size: 25px;
+    background: transparent;
+    border: none;
+    transition: 0.3s;
+}
+
+/*---------------------------------------- adjust --------------------------------------*/
+
+.position {
+    position: absolute;
+    top: 50px;
+    width: 240px;
+    height: 240px;
+    background-color: rgba(17, 17, 17, 0.856);
+    border-radius: 15px;
+    animation-name: desplegar;
+    animation-duration: 0.7s;
+}
+.position-down {
+    position: absolute;
+    top: -250px;
+    width: 240px;
+    height: 240px;
+    background-color: rgba(17, 17, 17, 0.856);
+    border-radius: 15px;
+    animation-name: desplegar;
+    animation-duration: 0.7s;
+}
+.adjust {
+    background-color: transparent;
+    width: 100%;
+    height: 100%;
+    border: 1px solid #0750a3;
+    border-radius: 10px;
+}
+.adjust-blocked {
+    display: flex;
+    align-items: center;    
+    background-color: rgba(128, 128, 128, 0.651);
+    width: 100%;
+    height: 100%;
+    border: 1px solid gray;
+    border-radius: 10px;
+    z-index: 0;
+}
+.adjust-blocked .up {
+    background-color: rgb(94, 94, 94);
+}
+.adjust-blocked .down {
+    background-color: rgb(94, 94, 94);
+}
+.adjust-blocked .line-position {
+    background-color: rgb(94, 94, 94);
+    z-index: 0;
+}
+.blocked {
+    position: absolute;
+    top: 10%;
+    left: 0%;
+    font-size: 50px;
+    z-index: 1;
+    color: rgb(187, 187, 187);
+}
+.btn-switch {
+    position: relative;
+    padding: 0px;
+    width: 80px;
+    border-radius: 32px;
+    top: 45px;
+    border: none;
+    animation-name: btn-active;
+    animation-duration: 1s;
+    background: white;
+}
+.switch {
+    position: absolute;
+    top: 2px;
+    right: 21px;
+    width: 32px;
+    height: 32px;
+    background: white;
+    z-index: 0;
+    margin: 0;
+    padding: 0;
+    appearance: none;
+    border: none;
+    cursor: pointer;
+    position: relative;
+    border-radius:16px; 
+    -moz-border-radius:16px;
+    -webkit-border-radius:16px;
+    
+}
+.circle-desactive {
+    position: relative;
+    left: 21px;
+}
+.switch-active {
+    background: rgb(1, 199, 1);
+}
+.switch-desactive {
+    background: gray;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 50%;
+    padding: 10px;
+    box-sizing: border-box;
+    animation-name: desplega-2;
+    animation-duration: 4s;
+}
+.encapsulate {
+    position: relative;
+    top: 0px;
+    margin: auto;
+    background-color: gray;
+    width: 50px;
+    height: 90%;
+    border-radius: 7px;
+    animation-name: encap;
+    animation-duration: 0.7s;
+    z-index: 2;
+}
+.up {
+    position: relative;
+    top: 4.5px;
+    left: 17px;
+    background-color: #0077ff;
+    width: 28px;
+    height: 8px;
+    border-radius: 3px;
+    animation-name: encap;
+    animation-duration: 1.5s;
+}
+.down {
+    position: relative;
+    top: 74px;
+    left: 17px;
+    background-color: #0077ff;
+    width: 28px;
+    height: 8px;
+    border-radius: 3px;
+    animation-name: down;
+    animation-duration: 1s;
+}
+.line-position {
+    position: relative;
+    top: 9px;
+    left: 43px;
+    background-color: #0077ff;
+    width: 2.5px;
+    height: 50px;
+    border-radius: 3px;
+    animation-name: encap;
+    animation-duration: 1s;
+}
+.pointer {
+    cursor: pointer;
+}
+/*---------------------------------------- none --------------------------------------*/
+.none {
+    display: none;
+}
+
+/*---------------------------------------- hover --------------------------------------*/
+
+/*------------------------- line ------------------------*/
+.options:hover {
+    cursor: pointer;
+    font-size: 24px;
+}
+
+/*------------------------ sound ------------------------*/
+.sound:hover {
+    font-size: 27px;
+    cursor: pointer;
+}
+.function:hover {
+    font-size: 27px;
+    cursor: pointer;
+}
+
+/*------------------------- button ------------------------*/
+.black:hover {
+    color: black;
+    background-color: white;
+}
+.btn:hover {
+    /*transform: translate3d(-10px, -10px, 10px);*/
+    width: 125px;
+    border: none;
+    cursor: pointer;
+}
+.b-me:hover {
+    font-size: 18.5px;
+    font-family: LibreBaskerville-Regular,Palatino Linotype,Times New Roman,serif;
+}
+
+/*---------------------------------------- @media --------------------------------------*/
+
+@media (max-width: 1100px) { 
+    .pres-2 {
+        position: relative;
+        left: 58%;
+        width: 35%;
+        height: 350px;
+    }
+    .view-2-1 p {
+        width: 70%;
+    }
+    .image-me {
+        position: absolute;
+        left: 12%;
+    }
+}
+@media (max-width: 800px) {
+    .view-2-1 {
+        width: 100%;
+    }    
+    .view-2-1 p {
+        width: 100%;
+    }
+    .pres-2 {
+        position: relative;
+        left: 10%;
+        width: 80%;
+    }
+    .pres-2-1 {
+        position: relative;
+        left: 10%;
+        width: 80%;
+    }
+    .image-me {
+        display: none;
+    }
+    .image-me-1 {
+        display: none;
+    }
+}
+/*---------------------------------------- @keyframe --------------------------------------*/
+
+@keyframes presentation-2 {
+    from {
+        /*background-color: linear-gradient(rgb(43, 35, 35), black);/**/
+        background: rgb(70, 70, 70);
+        color: rgba(240, 248, 255, 0);
+        z-index: 1;
+    }
+    to {
+        background: white;
+    }
+}
+@keyframes white {
+    from {
+        background-color: black;
+    }
+    to {    
+        background-color: white;
+    }
+}
+@keyframes black {
+    from {
+        background-color: white;
+    }
+    to {    
+        background-color: black;
+    }
+}
+@keyframes show { 
+    from {
+        position: absolute;
+        right: 20%;
+        background: transparent;
+    }
+}
+@keyframes desactive {
+    from {
+        width: 250px;
+    }
+    to {
+        width: 103px;
+    }
+}
+@keyframes active {
+    from {
+        width: 103px;
+    }
+    to {
+        width: 250px;
+    }
+}
+@keyframes desplegar {
+    from {
+        height: 100px;
+    }
+}
+@keyframes encap {
+    from {
+        height: 0px;
+        background-color: red;
+    }
+}
+@keyframes down {
+    from {
+        position: relative;
+        top: 0;
+        height: 0px;
+        background-color: red;
+    }
+}
+@keyframes desplegar-2 {
+    from {
+        position: relative;
+        height: 0;
+        background: transparent;
+        border: none;
+    }
+}
+@keyframes btn-active {
+    from {
+        position: relative;
+        width: 0;
+        background: transparent;
+        border: none;
+    }
+}
+@keyframes circle {
+    from {
+        background-color: transparent;
+    }
+}
+@keyframes me-2 {
+    from {
+        position: absolute;
+        /*left: 8%;*/
+        top: 110px;
+        opacity: 0;
+    }
+}
+@keyframes info {
+    from {
+        position: relative;
+        top: 100px;
+        opacity: 0;
+    }
+}

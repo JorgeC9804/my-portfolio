@@ -1,0 +1,227 @@
+.home { 
+    position: absolute;
+    text-align: center;
+    /*background: rgb(231, 26, 77);*/
+    /*background: rgba(63, 61, 61, 0.884);*/
+    width: 100%;
+    z-index: 0;
+    overflow: auto;
+}
+.home::-webkit-scrollbar {
+    height: 10px;
+    width: 10px;
+}
+
+/*---------------------------------------- Presentation 1 --------------------------------------*/
+
+.presentation-1 {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(rgba(255, 245, 234, 0), rgba(18, 33, 75, 0.486));/**/
+}
+.naufrago {
+    width: 100%;
+    background-image: url('./pictures/fondo1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    animation-name: naufrago;
+    animation-duration: 1.5s;
+}
+
+/*---------------------------------------- presentation 3 --------------------------------------*/
+
+.presentation-3 {
+    position: relative;
+    background: linear-gradient(red, #ff00c8);/**/
+    height: 100vh;
+    width: 100%;
+    animation-name: presentation;
+    animation-duration: 1s;
+}
+.presentation-3-1 {
+    height: 100vh;
+    width: 100%;
+}
+.presentation-4 {
+    background-color: rgb(253, 122, 0);
+    height: 100vh;
+    width: 100%;
+    animation-name: presentation;
+    animation-duration: 1s;
+}
+.presentation-4-1 {
+    height: 100vh;
+    width: 100%;
+}
+/*img {
+    width: 500px;
+    transition: all 0.5s ease;
+}*/
+
+/*p {
+    font-style: italic;
+    font-family: 'Monaco';
+    border: 1px solid;
+}*/ 
+.updateName {
+    position: relative;
+    /*Si puedo usar flex*/
+    top: 30vh;
+    width: 100%;
+    height: 300px;
+    display: flex;   
+}
+.me {
+    position: relative;
+    top: -80px;
+    left: 20%;
+    height: 70px;
+    font-size: 60px;
+    font-family: Arial;
+    font-weight: 100;
+    color: rgba(255, 255, 255, 0.486);
+    animation-name: initial-me;
+    animation-duration: 1.5s;
+}
+.btn-down {
+    position: absolute;
+    top: 200px;
+    left: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-color: transparent;
+    border: 1px solid rgba(128, 128, 128, 0.562);
+    color: white;
+    transition: .3s;
+    font-size: 20px;
+}
+.transition {
+    position: absolute;
+    top: 100px;
+    left: 20%;
+    color: rgba(255, 255, 255, 0.726);
+    font-weight: 100;
+    font-size: 20px;
+    animation: move 6s infinite;
+}
+.inital {
+    animation-name: transition;
+    animation-duration: 1.5s;
+}
+
+/*---------------------------------------- general --------------------------------------*/
+.display-center-h {
+    display: flex;
+    align-items: center;
+}
+.display-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.display-center-w {
+    display: flex;
+    justify-content: center;
+}
+
+/*---------------------------------------- hover --------------------------------------*/
+
+.btn-down:hover {
+    position: absolute;
+    top: 198px;
+    left: 19.8%;
+    height: 55px;
+    width: 55px;
+    font-size: 15px;
+}
+
+/*---------------------------------------- @media --------------------------------------*/
+
+@media (max-width: 800px) {
+    .updateName {  
+        position: absolute;
+        width: 100%;
+    }
+    .me {
+        position: absolute;
+        top: -200px;
+        left: 10%;
+        width: 300px;
+        height: 300px;
+        color: rgb(255, 198, 133);
+        font-size: 100px;
+    }
+    .transition {
+        position: absolute;
+        left: 10%;
+        top: 230px;
+    }
+    .btn-down {
+        position: absolute;
+        top: 60vh;
+        left: 10%;
+    }
+    .btn-down:hover {
+        position: absolute;
+        top: 59.9vh;
+        left: 9.8%;
+        height: 55px;
+        width: 55px;
+        font-size: 15px;
+    }
+}
+@media (max-width: 500px) {
+    .transition {
+        margin: auto;
+        position: absolute;
+        top: 320px;
+    }
+    .btn-down {
+        position: absolute;
+        top: 60vh;
+        left: 10%;
+    }
+}
+
+/*---------------------------------------- @keyframe --------------------------------------*/
+
+@keyframes move {
+    0% {
+        transform: translate(0px, 0px);
+    }
+    50% {
+        transform: translate(0px, 25px);
+        /*transform: scale(0.7);*/
+    }
+    100% {
+        transform: translate(0px, 0px);
+    }
+}
+@keyframes presentation {
+    from {
+        width: 95%;
+        background-color: rgba(0, 0, 0, 0.363);
+    }
+}
+@keyframes naufrago {
+    from {
+        opacity: 0;
+    }
+}
+@keyframes initial-me {
+    from {
+        position: relative;
+        top: -40px;
+        opacity: 0;
+    }
+}
+@keyframes transition {
+    from {
+        opacity: 0;
+    }
+}
+

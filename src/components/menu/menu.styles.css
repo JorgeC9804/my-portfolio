@@ -1,0 +1,120 @@
+
+/*------------------------------- interface 1 ------------------------------*/
+
+.header-1 {
+    position: fixed;
+    background: linear-gradient(rgb(179, 0, 0), #9e017c);
+    height: 100vh;
+    width: 90px;
+    border-radius: 5px;
+    z-index: 1;
+    box-shadow: 0px 0px 10px;
+}
+.change-1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    border: none;
+    height: 20%;
+    transition: 0.5s;
+    width: 100%;
+    color: white;
+    text-decoration: none;
+    /*border-bottom: 1px solid rgba(0, 0, 0, 0.349);/**/
+}
+/*------------------------------- link ------------------------------*/
+.link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20%;
+    width: 100%;
+    text-decoration: none;
+    color: white;
+    transition: 0.5s;
+    border: none;
+}
+
+/*------------------------------- interface 2 ------------------------------*/
+
+.header-2 { /*general*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    width: 100%;
+    animation-name: open-menu;
+    animation-duration: 0.6s;
+    color: black;
+}
+.change-2 {
+    display: flex;
+    font-size: 30px;
+    justify-content: center;
+    align-items: center;
+    height: 25%;
+    transition: 0.5s;
+    color: rgb(42, 91, 165);
+    width: 100%;
+    background-color: transparent;/**/
+    border: 0;
+}
+
+/*------------------------------- hover ------------------------------*/
+.change-1:hover {
+    width: 350px;
+    background-color: rgba(0, 0, 0, 0.842);
+    height: 20%;
+    font-size: 20px;
+    color: white;
+    cursor: pointer;
+    border-radius: 0px 0px 50%;
+}
+.change-2:hover {
+    background-color: rgba(29, 126, 156, 0.151);
+    height: 30%;
+    font-size: 35px;
+    width: 100%;
+    color: rgb(156, 0, 228);
+}
+.link:hover {
+    width: 100%;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.13);
+    height: 20%;
+    font-size: 22px;
+}
+
+/*------------------------------- Conection ------------------------------*/
+.conection {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.281);
+    text-decoration: none;
+    border: none;
+    height: 20%;
+    width: 100%;
+    transition: 0.5s;
+    color: black;
+    font-size: 18px;
+}
+
+
+/*------------------------------- @keyframes ------------------------------*/
+@keyframes open-menu {
+    from {
+        color: transparent;
+        height: 100%;
+        width: 0;
+    }
+    to {
+        color: black;   
+        height: 100vh;
+        width: 100%;
+    }
+}
+
+/*------------------------------- general ------------------------------*/
